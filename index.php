@@ -57,10 +57,10 @@ $faqs = [
                 </ol>
             </li>
             <li>
-                La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>",
+                La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li></ol>",
             "Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.
             
-        </ol>",
+        ",
 
         ], 'subtitle' => "Stabilire il paese associato al tuo account",
         'subparagraphs' => [
