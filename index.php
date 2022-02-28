@@ -124,11 +124,11 @@ $faqs = [
             <!-- Nav Bar -->
             <nav>
                 <ul>
-                    <li><a href="">Introduzione</a></li>
-                    <li><a href="">Norme sulla privacy</a></li>
-                    <li><a href="">Termini di servizio</a></li>
-                    <li><a href="">Tecnologie</a></li>
-                    <li><a href="">Domande frequenti</a></li>
+                    <li><a href=""><span>Introduzione</span></a></li>
+                    <li><a href=""><span>Norme sulla privacy</span></a></li>
+                    <li><a href=""><span>Termini di servizio</span></a></li>
+                    <li><a href=""><span>Tecnologie</span></a></li>
+                    <li><a href=""><span class="active">Domande frequenti</span></a></li>
                 </ul>
             </nav>
         </div>

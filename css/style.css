@@ -27,6 +27,11 @@ header{
 header a {
     font-size: 22px;
 }
+header a span.active {
+    color: #3367d6;
+    border-bottom: 3px solid #3367d6;
+    padding-bottom: 6px;
+}
 .profile-icon {
     background-color: #ef6c00;
     color: white;
