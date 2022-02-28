@@ -109,14 +109,21 @@ $faqs = [
 
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid px-3">
             <div class="row h-100 py-3">
-                <div class="col-6 d-flex align-items-center">
+                <!-- Logo and Privacy Terms -->
+                <div id="logo-container" class="col-6 d-flex align-items-center">
                     <img class="img-fluid d-inline-block pe-3" src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google Logo">
                     <a href="#" class="text-muted d-inline-block">Privacy e termini</a href="#">
                 </div>
+                <!-- Profile and Menu -->
                 <div class="col-6 d-flex justify-content-end align-items-center">
-                    <div class="profile-icon d-flex align-items-center justify-content-center">
+                    <span role="button" id="menu-button-container" class="d-flex align-items-center">
+                        <span id="menu-button" class="d-flex align-items-center justify-content-center">
+                            <img class="max-w-75" src="img/dots-menu.png" alt="">
+                        </span>
+                    </span>
+                    <div role="button" class="profile-icon d-flex align-items-center justify-content-center">
                         <span>A</span>
                     </div>
                 </div>

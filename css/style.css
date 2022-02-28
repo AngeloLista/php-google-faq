@@ -1,3 +1,4 @@
+/* Generals */
 body {
     padding-top: 50px;
 }
@@ -12,9 +13,18 @@ a {
     color: #3367d6;
 }
 a:hover {
-    color: #3367d6;
+    color: #000;
+}
+.max-w-75 {
+    max-width: 75%;
 }
 /* Header */
+header #logo-container a {
+    font-size: 22px;
+}
+header #logo-container a:active {
+    text-decoration: underline;
+}
 header{
     height: 100px;
     box-shadow: 0px 1px #cbcbcb;
@@ -24,20 +34,10 @@ header{
     left: 0;
     right: 0;
 }
-header a {
-    font-size: 22px;
-}
 header a span.active {
     color: #3367d6;
     border-bottom: 3px solid #3367d6;
-    padding-bottom: 6px;
-}
-.profile-icon {
-    background-color: #ef6c00;
-    color: white;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
+    padding-bottom: 8px;
 }
 
 header nav ul {
@@ -50,10 +50,35 @@ header nav ul li{
 }
 header nav ul li a{
     padding-right: 35px;
-    font-size: 1.1rem;
-    color: black;
+    font-size: 16px;
+    color: #5f6368;
 }
-
+#menu-button-container {
+    width: 25px;
+    height: 25px;
+    margin: 0 15px;
+    border-radius: 50%;
+}
+#menu-button {
+    height: 70%;
+    filter: invert(37%) sepia(5%) saturate(503%) hue-rotate(173deg) brightness(101%) contrast(91%);
+    border-radius: 50px;
+}
+#menu-button-container:hover {
+    
+    background-color: #f0f0f0;
+    box-shadow: 0 0 0 7px #f0f0f0;
+}
+.profile-icon {
+    background-color: #ef6c00;
+    color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.profile-icon:hover {
+    box-shadow: 0 0 0 3.5px #f0f0f0;
+}
 /* Main */
 main h3 {
     margin-bottom: 30px;
