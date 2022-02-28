@@ -157,7 +157,32 @@ $faqs = [
             <?php endforeach; ?>
         </div>
     </main>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Links -->
+                <div class="col-6 d-flex align-items-center">
+                    <ul>
+                        <li><a href="">Google</a></li>
+                        <li><a href="">Tutto su Google</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Termini</a></li>
+                    </ul>
+                </div>
+
+                <!-- Language Selector -->
+                <div class="col-6 d-flex justify-content-end">
+                    <select name="Language" id="Language">
+                        <option value="Italiano">Italiano</option>
+                        <option value="Italiano">English (United Kingdom)</option>
+                        <option value="Italiano">Svenska</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
