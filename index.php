@@ -92,7 +92,9 @@ $faqs = [
 <body>
     <header></header>
     <main>
-        <?php var_dump($faqs) ?>
+        <?php foreach ($faqs as $faq) : ?>
+            <h3><? echo ($faq['title']) ?></h3>
+        <?php endforeach; ?>
     </main>
     <footer></footer>
 
