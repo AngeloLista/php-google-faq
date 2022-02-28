@@ -104,22 +104,24 @@ $faqs = [
 <body>
     <header></header>
     <main>
+        <!-- Title -->
         <?php foreach ($faqs as $faq) : ?>
             <h3><? echo ($faq['title']) ?></h3>
-            <?php $i = 0;
-            for ($i = 0; $i < count($faq['paragraphs']); $i++) :
+            <!-- Paragraphs -->
+            <?php for ($i = 0; $i < count($faq['paragraphs']); $i++) :
             ?>
                 <p><?= $faq['paragraphs'][$i] ?></p>
-
-
-
             <?php endfor; ?>
+
+            <!-- Sub Title -->
             <?php if (array_key_exists('subtitle', $faq)) : ?>
                 <h5><?= $faq['subtitle'] ?></h5>
+                <!-- Sub Paragraphs -->
                 <?php for ($i = 0; $i < count($faq['subparagraphs']); $i++) : ?>
                     <p><?= $faq['subparagraphs'][$i] ?></p>
                 <?php endfor; ?>
             <?php endif; ?>
+
         <?php endforeach; ?>
     </main>
     <footer></footer>
