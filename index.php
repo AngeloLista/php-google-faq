@@ -97,32 +97,65 @@ $faqs = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="//ssl.gstatic.com/policies/favicon.ico" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Domande frequenti – Privacy e termini – Google</title>
 </head>
 
 
 <body>
-    <header></header>
+    <header>
+        <div class="container-fluid">
+            <div class="row h-100 py-3">
+                <div class="col-6 d-flex align-items-center">
+                    <img class="img-fluid d-inline-block pe-3" src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google Logo">
+                    <a href="#" class="text-muted d-inline-block">Privacy e termini</a href="#">
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                    <div class="profile-icon d-flex align-items-center justify-content-center">
+                        <span>A</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Nav Bar -->
+            <nav>
+                <ul>
+                    <li><a href="">Introduzione</a></li>
+                    <li><a href="">Norme sulla privacy</a></li>
+                    <li><a href="">Termini di servizio</a></li>
+                    <li><a href="">Tecnologie</a></li>
+                    <li><a href="">Domande frequenti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <main>
-        <!-- Title -->
-        <?php foreach ($faqs as $faq) : ?>
-            <h3><? echo ($faq['title']) ?></h3>
-            <!-- Paragraphs -->
-            <?php for ($i = 0; $i < count($faq['paragraphs']); $i++) :
-            ?>
-                <p><?= $faq['paragraphs'][$i] ?></p>
-            <?php endfor; ?>
-
-            <!-- Sub Title -->
-            <?php if (array_key_exists('subtitle', $faq)) : ?>
-                <h5><?= $faq['subtitle'] ?></h5>
-                <!-- Sub Paragraphs -->
-                <?php for ($i = 0; $i < count($faq['subparagraphs']); $i++) : ?>
-                    <p><?= $faq['subparagraphs'][$i] ?></p>
-                <?php endfor; ?>
-            <?php endif; ?>
-
-        <?php endforeach; ?>
+        <div class="container p-5">
+            <!-- Title -->
+            <?php foreach ($faqs as $faq) : ?>
+                <section>
+                    <h3><? echo ($faq['title']) ?></h3>
+                    <!-- Paragraphs -->
+                    <?php for ($i = 0; $i < count($faq['paragraphs']); $i++) :
+                    ?>
+                        <p><?= $faq['paragraphs'][$i] ?></p>
+                    <?php endfor; ?>
+                    <!-- Sub Title -->
+                    <?php if (array_key_exists('subtitle', $faq)) : ?>
+                        <h5><?= $faq['subtitle'] ?></h5>
+                        <!-- Sub Paragraphs -->
+                        <?php for ($i = 0; $i < count($faq['subparagraphs']); $i++) : ?>
+                            <p><?= $faq['subparagraphs'][$i] ?></p>
+                        <?php endfor; ?>
+                    <?php endif; ?>
+                </section>
+            <?php endforeach; ?>
+        </div>
     </main>
     <footer></footer>
 
