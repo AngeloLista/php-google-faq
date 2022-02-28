@@ -60,11 +60,9 @@ $faqs = [
                 La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>",
             "Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.
             
-        </ol>"
-        ],
+        </ol>",
 
-
-        'subtitle' => "Stabilire il paese associato al tuo account",
+        ], 'subtitle' => "Stabilire il paese associato al tuo account",
         'subparagraphs' => [
             "Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato. Per quanto riguarda gli account creati almeno un anno fa, usiamo il paese da cui accedi solitamente ai servizi Google, in genere i servizi in cui hai trascorso più tempo nell'ultimo anno.",
 
@@ -72,6 +70,9 @@ $faqs = [
 
             "Se il paese associato al tuo account non corrisponde al tuo paese di residenza, il motivo potrebbe essere la differenza tra il paese in cui lavori e il paese in cui risiedi, l'installazione di una rete privata virtuale (VPN) per mascherare il tuo indirizzo IP oppure la residenza vicino a un confine territoriale. <a href=\"#\">Contattaci</a> se ritieni che il paese associato al tuo account sia sbagliato."
         ]
+
+
+
 
     ],
     // 3
@@ -111,7 +112,14 @@ $faqs = [
                 <p><?= $faq['paragraphs'][$i] ?></p>
 
 
+
             <?php endfor; ?>
+            <?php if (array_key_exists('subtitle', $faq)) : ?>
+                <h5><?= $faq['subtitle'] ?></h5>
+                <?php for ($i = 0; $i < count($faq['subparagraphs']); $i++) : ?>
+                    <p><?= $faq['subparagraphs'][$i] ?></p>
+                <?php endfor; ?>
+            <?php endif; ?>
         <?php endforeach; ?>
     </main>
     <footer></footer>
